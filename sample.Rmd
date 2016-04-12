@@ -26,10 +26,10 @@ opts_chunk$set(dev=c("png","pdf"),
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ```{r, figure-1}
-correlated.value <- function(x, r){
+correlated.value = function(x, r){
     r2 <- r ^ 2
-    ve <- 1 - r2
-    SD <- sqrt(ve)
+    ve <- 1-r2
+    SD = sqrt(ve)
     e  <- rnorm(length(x), mean=0, sd=SD)
     y  <- r * x + e
   return(y)
